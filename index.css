@@ -5,3 +5,7 @@ header {
     background-color: black;
     color: whitesmoke;
 }
+
+.hidden {
+    visibility: hidden;
+}
