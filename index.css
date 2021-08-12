@@ -1,15 +1,29 @@
 /*****  CONTAINERS  ****/
 nav {
-    background-color: aqua;
+    background-color: silver;
 }
 header {
     background-color: black;
     color: whitesmoke;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-a {
+a:link {
+    color: white;
+    text-decoration: none;
     padding: 0 5px;
+
 }
+a:hover {
+    background-color: black;
+    color: white;
+}
+a:active {
+    color: thistle;
+}
+a:visited {
+    color: black;
+}
+
 .hidden {
     visibility: hidden;
 }
@@ -17,9 +31,11 @@ a {
 /*****  MOBILE  ****/
 .ul-nav {
     list-style: none;
+
     display: flex;
     flex-flow: column wrap;
 
+    min-height: 100px;
     margin: 0 auto;
     padding: 5px;
 }
