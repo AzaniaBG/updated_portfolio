@@ -1,3 +1,4 @@
+/*****  CONTAINERS  ****/
 nav {
     background-color: aqua;
 }
@@ -5,7 +6,31 @@ header {
     background-color: black;
     color: whitesmoke;
 }
-
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+a {
+    padding: 0 5px;
+}
 .hidden {
     visibility: hidden;
 }
+
+/*****  MOBILE  ****/
+.ul-nav {
+    list-style: none;
+    display: flex;
+    flex-flow: column wrap;
+
+    margin: 0 auto;
+    padding: 5px;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*****  BREAKPOINT AT 600PX  ****/
+@media only screen and (min-width: 600px) {
+    .ul-nav {
+        flex-flow: row nowrap;
+    }
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*****  BREAKPOINT AT   ****/
