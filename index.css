@@ -7,15 +7,14 @@ header {
     color: whitesmoke;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-a:link {
+a {
     color: white;
     text-decoration: none;
     padding: 0 5px;
 
 }
 a:hover {
-    background-color: black;
-    color: white;
+    font-size: 1.5em;
 }
 a:active {
     color: thistle;
@@ -29,6 +28,12 @@ a:visited {
 }
 
 /*****  MOBILE  ****/
+.nav-menu {
+    display: none;
+}
+.nav-menu-mobile {
+    display: inline-block;
+}
 .ul-nav {
     list-style: none;
 
@@ -43,8 +48,15 @@ a:visited {
 
 /*****  BREAKPOINT AT 600PX  ****/
 @media only screen and (min-width: 600px) {
+    .nav-menu-mobile {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
     .ul-nav {
         flex-flow: row nowrap;
+        justify-content: space-evenly;
     }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
