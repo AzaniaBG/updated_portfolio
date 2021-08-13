@@ -38,7 +38,7 @@ a:visited {
     display: none;
 }
 .nav-menu-mobile {
-    display: inline-block;
+    display: block;
 }
 .ul-nav {
     list-style: none;
