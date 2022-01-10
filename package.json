@@ -1,5 +1,32 @@
 {
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4"
-  }
+  },
+  "name": "u_portfolio",
+  "version": "1.0.0",
+  "description": "Updated portfolio website for Azania Baker-Garcia.",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-B-G/updated_portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "Azania",
+    "Baker-Garcia",
+    "CSS",
+    "HTML",
+    "JavaScript"
+  ],
+  "author": "Azania Baker-Garcia",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/A-B-G/updated_portfolio/issues"
+  },
+  "homepage": "https://github.com/A-B-G/updated_portfolio#readme"
 }
