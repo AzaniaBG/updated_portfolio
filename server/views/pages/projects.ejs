@@ -7,7 +7,15 @@
 <body>
     <%- include('../partials/header'); %>
 
-    <main>Main</main>
+    <main>
+        <% projectsData.projects.map((p) => { %>
+            <li><%= p.projectName %></li>
+        
+        <% }) %>
+    
+
+    </main>
+
     <footer>
         <%- include('../partials/footer')%>
     </footer>
