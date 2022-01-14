@@ -1,0 +1,223 @@
+/*****  CONTAINERS  ****/
+/* nav {
+    background-color: silver;
+} */
+header {
+    background-color: black;
+    color: whitesmoke;
+}
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/********************  CSS RESET  ******************************/
+ul, li {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    /* vertical-align: baseline; */
+}
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+/********************  MOBILE  ******************************/
+
+
+
+img.img-logo {
+    width: 50px;
+    height: 50px;
+
+}
+img.avatar-mobile {
+    display: block;
+    margin: auto auto;
+    width: 50%;
+}
+img.footer-logo-mobile {
+    display: block;
+    margin: auto auto;
+
+    width: 50px;
+    height: 50px;
+}
+a {
+    color: white;
+    text-decoration: none;
+    padding: 0 5px;
+
+}
+a:hover {
+    font-size: 1.5em;
+}
+a:active {
+    color: thistle;
+}
+a:visited {
+    color: black;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+/*****  NAV MOBILE  ****/
+.nav-menu {
+    display: none;
+}
+.nav-menu-mobile {
+    display: block;
+}
+.ul-nav {
+    list-style: none;
+
+    display: flex;
+    flex-flow: column wrap;
+
+    min-height: 100px;
+    margin: 0 auto;
+    padding: 5px;
+}
+/*<<<<<<<<<<<<<<<<<<< END  NAV MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/* ******** PROJECTS MOBILE ************ */
+/* .flex-li-mobile {
+    width: 75%;
+    margin: auto auto 10px;
+
+    color: gray;
+} */
+ul.flex-container {
+    display: flex;
+    flex-direction: column;
+    
+    width: 85%;
+    margin: auto auto;
+    padding-top: 5%;
+}
+li.flex-li {
+    margin-bottom: 15px;
+    padding-bottom: 25px;
+    background-color: white;
+}
+.li-img-mobile {
+    width: 50%;
+    height: auto;
+    margin-bottom: 25px;
+}
+header {
+    padding: 5%;
+}
+h4.projects-h4 {
+    margin-bottom: 1px;
+}
+a.repo-link, span.repo-link {
+    font-size: .75em;
+    color: gray;
+}
+a.repo-link:hover {
+    padding: 5px;
+    color: white;
+    background-color: gray;
+}
+article.project-description {
+    text-align: left;
+    margin: 0 10%;
+}
+
+
+/*  ******** END PROJECTS MOBILE ******** */
+
+/*  ******** BLOG MOBILE ******** */
+
+.blog-header {
+    text-align: center;
+}
+/*  ******** END BLOG MOBILE ******** */
+
+
+
+/*<<<<<<<<<<<<<<<<<<< END MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+/*****  BREAKPOINT AT 600px  ****/
+@media only screen and (min-width: 600px) {
+    button.burger-menu, .nav-menu-mobile {
+        display: none;
+    }
+    .nav-menu {
+        display: block;
+    }
+    .ul-nav {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+    }
+}
+/*<<<<<<<<<<<<<<<<< END MIN 600px <<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+@media only screen and (min-width: 700px) {
+    ul.flex-container {
+        flex-flow: row wrap;
+        justify-content: space-between;
+        
+        margin: auto auto;
+
+    }
+    li.flex-li {
+        
+        margin-bottom: 15px;
+        padding-bottom: 25px;
+        background-color: white;
+
+        flex: 2 2 50%;
+    }
+    .li-img-mobile {
+        flex: 1 2 auto;
+
+        width: 50%;
+        height: auto;
+        margin-bottom: 25px;
+    }
+
+}
+/*****  BREAKPOINT AT 650px  ****/
+
+/*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
+/* STYLES */
+body main {
+    background-color: silver;
+}
+.text-center {
+    text-align: center;
+}
+.no-bullet-list {
+    list-style: none;
+}
+/* .solid-border-rounded {
+    border: thin solid black;
+    border-radius: 5%;
+    flex-basis: content;
+
+} */
+
+/* TESTING */
+
+/* .test-ul-flex {
+    display: flex;
+    flex-flow: column;
+} */
+
+/* @media only screen and (min-width: 500px) {
+
+    .test-ul-flex {
+        flex-flow: row wrap;
+    }
+    .test-li-flex {
+        
+        flex: 2 2 50;
+    }
+    .test-ul-flex p {
+        margin: 0 25px;
+    }
+
+} */
+
+/* ***************************************** */
