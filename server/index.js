@@ -2,22 +2,21 @@
 const express = require('express');
 const app = require('./src/app');
 
-const ProjectsData = require('./src/projects.js')
-// console.log(ProjectsData);
-let projectsNames = ProjectsData.projects.map(el => el.projectName);
+const projectsData = require('./src/projects.js')
+
+let projectsNames = projectsData.projects.map(el => el.projectName);
 console.log(projectsNames);
-// console.log("module", module);
 
 
-// app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
+
 
 app.get('/', (req, res) => {
     res.render('./pages/index.ejs', {
         title: 'ABG - Welcome Page',
         header: 'Azania Baker-Garcia',
-        footer: 'ABG - Home'
+        footer: 'ABG - Home',
     });
 })
 
@@ -42,6 +41,7 @@ app.get('/projects', (req, res) => {
         title: 'ABG - Projects',
         header: 'Projects - Azania Baker-Garcia',
         footer: 'ABG - Projects',
+        projectsData: projectsData
     })
 })
 
