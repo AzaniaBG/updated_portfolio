@@ -74,6 +74,13 @@ a:visited {
     margin: 0 auto;
     padding: 5px;
 }
+
+.flex {
+    display: flex;
+}
+.flex.responsive {
+    flex-direction: column;
+}
 /*<<<<<<<<<<<<<<<<<<< END  NAV MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* ******** PROJECTS MOBILE ************ */
@@ -151,6 +158,8 @@ article.project-description {
     }
 }
 /*<<<<<<<<<<<<<<<<< END MIN 600px <<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+
+
 @media only screen and (min-width: 700px) {
     ul.flex-container {
         flex-flow: row wrap;
@@ -174,6 +183,12 @@ article.project-description {
         height: auto;
         margin-bottom: 25px;
     }
+
+    /*  PETS */
+    .flex.responsive {
+        flex-direction: row;
+    }
+    /* ***** */
 
 }
 /*****  BREAKPOINT AT 650px  ****/
