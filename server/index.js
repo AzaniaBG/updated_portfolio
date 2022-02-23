@@ -4,8 +4,8 @@ const app = require('./src/app');
 
 const projectsData = require('./src/projects.js')
 
-let projectsNames = projectsData.projects.map(el => el.projectName);
-console.log(projectsNames);
+// let projectsNames = projectsData.projects.map(el => el.projectName);
+// console.log(projectsNames);
 
 
 app.set('view engine', 'ejs');
@@ -47,4 +47,4 @@ app.get('/projects', (req, res) => {
 
 
 
-app.listen(8000, () => console.log("PORT HERE!"));
+app.listen(8000, () => console.log("PORT HERE at http://localhost:8000/!"));
