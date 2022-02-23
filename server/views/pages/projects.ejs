@@ -9,7 +9,12 @@
 
     <main>
         <% projectsData.projects.map((p) => { %>
-            <li><%= p.projectName %></li>
+            <li><%= p.projectName %>
+            <a href=<%= p.liveLink %>>live link</a>
+                <%= p.description %>
+                tech:<%= p.tech %>
+                <a href=<%= p.repo %>> GitHub repo</a>
+            </li>
         
         <% }) %>
     
