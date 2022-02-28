@@ -6,6 +6,10 @@ header {
     background-color: black;
     color: whitesmoke;
 }
+section.quote-section {
+    min-height: 15vh;
+}
+
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /********************  CSS RESET  ******************************/
 ul, li {
