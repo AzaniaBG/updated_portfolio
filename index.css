@@ -19,7 +19,13 @@ ul, li {
 /********************  MOBILE  ******************************/
 
 
-
+img.mobile-img-logo.center {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+}
 img.img-logo {
     width: 50px;
     height: 50px;
@@ -146,6 +152,9 @@ article.project-description {
 
 /*****  BREAKPOINT AT 600px  ****/
 @media only screen and (min-width: 600px) {
+    img.mobile-img-logo.center {
+        display: none;
+    }
     button.burger-menu, .nav-menu-mobile {
         display: none;
     }
@@ -203,6 +212,14 @@ body main {
 }
 .text-center {
     text-align: center;
+}
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50px;
+    height: 50px;
+    
 }
 .no-bullet-list {
     list-style: none;
