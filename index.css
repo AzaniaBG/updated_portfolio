@@ -155,6 +155,7 @@ article.project-description {
     .ul-nav {
         flex-flow: row nowrap;
         justify-content: space-evenly;
+        padding-bottom: .5px;
     }
 }
 /*<<<<<<<<<<<<<<<<< END MIN 600px <<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
