@@ -12,7 +12,7 @@ h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 2.5rem;
 }
-h2 {
+h2, h3 {
     font-size: 1.5rem;
     font-family: 'Akshar', sans-serif;
     padding: .5em;
@@ -51,14 +51,14 @@ ul, li {
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
-.section {
+.section, .container {
     padding: 1em;
 }
 /********************  MOBILE  ******************************/
 body {
     margin: 0;
 }
-body main .home {
+body main {
     padding: 2em;
     background-color: silver;
 }
