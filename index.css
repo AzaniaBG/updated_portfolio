@@ -2,26 +2,66 @@
 /* nav {
     background-color: silver;
 } */
-header {
+
+header, h1 {
     background-color: black;
     color: whitesmoke;
+    text-align: center;
+}
+h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Akshar', sans-serif;
+    padding: .5em;
+}
+
+li, p, article {
+    font-family: 'Akshar', sans-serif;
+    font-weight: 300;
+    letter-spacing: .01in;
+
 }
 section.quote-section {
     min-height: 15vh;
 }
-
+.work-list {
+    padding: .5em 1em;
+}
+.work-list li small {
+    color: darkslategrey;
+}
+.work-list li:last-child {
+    padding-bottom: .5em;
+}
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /********************  CSS RESET  ******************************/
+h1, h2, h3, h4 {
+    margin: 0;
+}
 ul, li {
     margin: 0;
     padding: 0;
     border: 0;
+    list-style: none;
     /* vertical-align: baseline; */
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
-/********************  MOBILE  ******************************/
 
+.section {
+    padding: 1em;
+}
+/********************  MOBILE  ******************************/
+body {
+    margin: 0;
+}
+body main .home {
+    padding: 2em;
+    background-color: silver;
+}
 
 img.mobile-img-logo.center {
     display: inline-block;
@@ -68,11 +108,22 @@ a:visited {
 }
 
 /*****  NAV MOBILE  ****/
+div.nav-mobile {
+    background-color: black;
+}
 .nav-menu {
     display: none;
 }
 .nav-menu-mobile {
-    display: block;
+    display: inline;
+}
+header.mobile {
+    padding: 0;
+    text-align: left;
+} 
+h1.mobile {
+    display: inline;
+    text-align: center;
 }
 .ul-nav {
     list-style: none;
@@ -156,6 +207,9 @@ article.project-description {
 
 /*****  BREAKPOINT AT 600px  ****/
 @media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 3em;
+    }
     img.mobile-img-logo.center {
         display: none;
     }
@@ -211,9 +265,7 @@ article.project-description {
 
 
 /* STYLES */
-body main {
-    background-color: silver;
-}
+
 .text-center {
     text-align: center;
 }
