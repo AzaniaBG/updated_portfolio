@@ -48,7 +48,7 @@ img.footer-logo-mobile {
     height: 50px;
 }
 a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 0 5px;
 
@@ -60,7 +60,7 @@ a:active {
     color: thistle;
 }
 a:visited {
-    color: black;
+    color: darkslategray;
 }
 
 .hidden {
