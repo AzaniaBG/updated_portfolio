@@ -199,11 +199,13 @@ ul.flex-container {
     margin: auto auto;
     padding-top: 5%;
 }
+
 li.flex-li {
     margin-bottom: 15px;
     padding-bottom: 25px;
     background-color: white;
 }
+
 .li-img-mobile {
     width: 50%;
     height: auto;
@@ -213,7 +215,14 @@ li.flex-li {
     inset -10px -10px 15px rgba(255, 255, 255, 0.5),
     inset 10px 10px 15px rgba(70, 70, 70, 0.12);
 }
-
+.flex-li img.li-img-mobile:hover {
+    /* padding-right: .5em;
+    padding-top: .5em;
+    background-color: deepskyblue; */
+    filter: drop-shadow(16px 16px 10px black);
+    padding-top: .25em;
+    padding-right: .25em;
+}
 header {
     padding: 5%;
 }
