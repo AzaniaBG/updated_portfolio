@@ -3,19 +3,30 @@
     background-color: silver;
 } */
 
-header, h1 {
-    background-color: black;
-    color: whitesmoke;
-    text-align: center;
+header {
+    /* background-color: black; */
+    background-color: #000428;
 }
 h1 {
     font-family: 'Bebas Neue', cursive;
     font-size: 2.5rem;
+    color: whitesmoke;
+    text-align: center;
+}
+h2 {
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.5rem;
+    padding: .5em;
+}
+h3 {
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.25em;
 }
 h2, h3 {
-    font-size: 1.5rem;
-    font-family: 'Akshar', sans-serif;
-    padding: .5em;
+    color: #000428;
+}
+header.home-header {
+    background-color: #000428;
 }
 
 li, p, article {
@@ -27,14 +38,31 @@ li, p, article {
 section.quote-section {
     min-height: 15vh;
 }
+div.resume-container {
+    box-shadow: inset -5px -5px 9px rgba(255,255,255,0.45), 
+    inset 5px 5px 9px rgba(94,104,121,0.3);
+}
 .work-list {
     padding: .5em 1em;
 }
 .work-list li small {
     color: darkslategrey;
 }
+
 .work-list li:last-child {
     padding-bottom: .5em;
+}
+
+.skill-list li:first-child {
+    font-size: 1.25em;
+    font-weight: bold;
+}
+footer.footer-container {
+    background-color: #004e92;
+}
+footer img.footer-logo-mobile {
+    width: 25px;
+    height: auto;
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 /********************  CSS RESET  ******************************/
@@ -58,11 +86,22 @@ ul, li {
 body {
     margin: 0;
 }
-body main {
-    padding: 2em;
-    background-color: silver;
+main {
+    height: 50vh;
 }
-
+main.home-container,
+section.headline-container {
+    /* border-radius: 1em;
+    margin-top: 1em;
+    padding: 2em; */
+    /* background: #f8f8ff; */
+    background: linear-gradient(to bottom, #000428, #004e92);
+    color: whitesmoke;
+}
+main article.article-home {
+    padding: 3em 1em;
+    font-size: 1.25em;
+}
 img.mobile-img-logo.center {
     display: inline-block;
     margin-left: auto;
@@ -78,7 +117,9 @@ img.img-logo {
 img.avatar-mobile {
     display: block;
     margin: auto auto;
-    width: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
 img.footer-logo-mobile {
     display: block;
@@ -200,7 +241,6 @@ article.project-description {
 /*  ******** END BLOG MOBILE ******** */
 
 
-
 /*<<<<<<<<<<<<<<<<<<< END MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -229,6 +269,14 @@ article.project-description {
 
 
 @media only screen and (min-width: 700px) {
+    header {
+        box-shadow: 5px 5px 9px rgba(94, 104, 121, 0.3);
+    }
+    main.home-container  {
+        margin: 3em;
+        /* box-shadow: 5px 5px 9px rgba(94, 104, 121, 0.3); */
+        border-radius: 1em;
+    }
     ul.flex-container {
         flex-flow: row wrap;
         justify-content: space-between;
@@ -258,6 +306,14 @@ article.project-description {
     }
     /* ***** */
 
+    /* ABOUT */
+    div.resume-container {
+        padding: 3em;
+    }
+    .resume-container .work-list li:last-child {
+        font-size: 1.10em;
+        max-width: 30em;
+    }
 }
 /*****  BREAKPOINT AT 650px  ****/
 
@@ -280,33 +336,10 @@ article.project-description {
 .no-bullet-list {
     list-style: none;
 }
-/* .solid-border-rounded {
-    border: thin solid black;
-    border-radius: 5%;
-    flex-basis: content;
-
-} */
-
-/* TESTING */
-
-/* .test-ul-flex {
-    display: flex;
-    flex-flow: column;
-} */
-
-/* @media only screen and (min-width: 500px) {
-
-    .test-ul-flex {
-        flex-flow: row wrap;
+@media only screen and (min-width: 1000px) {
+    div.resume-container {
+        margin: 1em 15em;
     }
-    .test-li-flex {
-        
-        flex: 2 2 50;
-    }
-    .test-ul-flex p {
-        margin: 0 25px;
-    }
-
-} */
+}
 
 /* ***************************************** */
