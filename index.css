@@ -102,6 +102,10 @@ main article.article-home {
     padding: 3em 1em;
     font-size: 1.25em;
 }
+main.projects-container {
+    height: 65vh;
+    overflow-y: scroll;
+}
 img.mobile-img-logo.center {
     display: inline-block;
     margin-left: auto;
@@ -147,35 +151,35 @@ a:visited {
 .hidden {
     visibility: hidden;
 }
-
-/*****  NAV MOBILE  ****/
-div.nav-mobile {
-    background-color: black;
-}
-.nav-menu {
-    display: none;
-}
-.nav-menu-mobile {
-    display: inline;
-}
+/* HEADER MOBILE  */
 header.mobile {
     padding: 0;
     text-align: left;
 } 
-h1.mobile {
-    display: inline;
-    text-align: center;
+    h1.mobile {
+        display: inline;
+        text-align: center;
+    }
+/*****  NAV MOBILE  ****/
+div.nav-mobile {
+    background-color: black;
 }
-.ul-nav {
-    list-style: none;
+    .nav-menu {
+        display: none;
+    }
+    .nav-menu-mobile {
+        display: inline;
+    }
+    .ul-nav {
+        list-style: none;
 
-    display: flex;
-    flex-flow: column wrap;
+        display: flex;
+        flex-flow: column wrap;
 
-    min-height: 100px;
-    margin: 0 auto;
-    padding: 5px;
-}
+        min-height: 100px;
+        margin: 0 auto;
+        padding: 5px;
+    }
 
 .flex {
     display: flex;
@@ -186,12 +190,7 @@ h1.mobile {
 /*<<<<<<<<<<<<<<<<<<< END  NAV MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* ******** PROJECTS MOBILE ************ */
-/* .flex-li-mobile {
-    width: 75%;
-    margin: auto auto 10px;
 
-    color: gray;
-} */
 ul.flex-container {
     display: flex;
     flex-direction: column;
