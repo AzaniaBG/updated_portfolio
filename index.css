@@ -85,7 +85,10 @@ div.skills {
                     font-size: 1.25em;
                     font-weight: bold;
                 }
-
+div.projects-container {
+    border: solid 5px;
+    border-image: linear-gradient(to right, darkblue, darkorchid) 1;
+}
 footer.home-footer {
     background-color: #004e92;
     margin-top: 3em
@@ -113,9 +116,10 @@ div.article-home-wrapper {
     article.article-home {
         padding: 1em;
     }
-    header.home-h1-mobile {
+    /* header.home-h1-mobile {
         display: flex;
-    }
+        justify-content: center;
+    } */
 
     header h1.home-h1,
     header h1.home-h1-min600 {
@@ -192,12 +196,7 @@ div.skills-container {
 /********************  MOBILE  320px ******************************/
 /* min 320px */
 @media only screen and (min-width: 320px) {
-    header.home-container {
-        display: flex;
-        flex-direction: column;
-        height: 7vh;
 
-    }
         h1.home-h1-mobile {
             display: inline-block;
             background-color: #000428;
@@ -269,17 +268,16 @@ div.skills-container {
             padding: 2em 1em;
         }
 
+    div.projects-container {
+        border: none;
+    }
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /********************  MOBILE  420px ******************************/
 /* min 420px */
 @media only screen and (min-width:420px) {
-    header.home-container {
-        display: flex;
-        flex-direction: column;
-        height: 10vh;
-    }
+
         header h1.home-h1-mobile {
             width: fit-content;
             display: inline-block;
@@ -331,9 +329,14 @@ div.skills-container {
     div.skills-container {
         margin-top: .5em;
     }
-    div.down-arrow {
-        left: 25em;
+
+    div.projects-container {
+        border: solid 5px;
+        border-image: linear-gradient(to right, darkblue, darkorchid) 1;
     }
+        div.down-arrow {
+            left: 25em;
+        }
 }
 
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
@@ -443,6 +446,7 @@ article.project-description {
 
 /*****  BREAKPOINT AT 600px  ****/
 @media only screen and (min-width: 600px) {
+
     header h1.home-h1-min600 {
         display: block;
         font-size: 3em;
@@ -513,7 +517,6 @@ article.project-description {
 
 @media only screen and (min-width: 700px) {
     header {
-        justify-content: column;
         box-shadow: 5px 5px 9px rgba(94, 104, 121, 0.3);
     }
         ul.ul-nav {
@@ -663,11 +666,20 @@ article.project-description {
             width: 90%;
             margin: auto;
         } */
-
-    main.projects-container {
-        height: 80vh;
-        overflow-y: scroll;
+    body.projects-body {
+        background-color: #000428;
     }
+    div.projects-container {
+        max-width: 75vw;
+        margin: auto;
+
+        background-color: white;
+    }
+        main.projects-container {
+            height: 80vh;
+            overflow-y: scroll;  
+        }
+
     .ul-nav {
         width: 50vw;
     }
@@ -686,9 +698,9 @@ article.project-description {
 
         border: thin solid black;
     }
-    div.resume-container {
-        box-shadow: none;
-    }
+        div.resume-container {
+            box-shadow: none;
+        }
 }
 
 /* ***************************************** */
