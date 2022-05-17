@@ -43,5 +43,53 @@ const ProjectsData = {
     ]
 
 }
+const AfricanProverbs = {
+    "quotes": [
+        { 
+            id: 1, 
+            quote: "Examine what is said, not who is speaking.", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        { 
+            id: 2, 
+            quote: "Knowledge is a garden. If it isn’t cultivated, you can’t harvest it.", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        { 
+            id: 3, 
+            quote: "Knowledge is a garden. If it isn’t cultivated, you can’t harvest it.", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        { 
+            id: 4, 
+            quote: "Tomorrow belongs to people who prepare for it today.", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        { 
+            id: 5, 
+            quote: "To try and fail is not laziness.", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        { 
+            id: 6, 
+            quote: "A feeble effort will not fulfill the self.", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        { 
+            id: 7, 
+            quote: "Great people become great when others are sleeping.", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        { 
+            id: 7, 
+            quote: "A man who uses force is afraid of reasoning..", 
+            source: "https://parade.com/1100530/marynliles/african-proverbs/"
+        },
+        
+
+    ]
+
+
+}
 
 export { ProjectsData }; 
