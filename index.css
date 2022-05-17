@@ -90,9 +90,13 @@ div.projects-container {
     border: solid 5px;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 }  
-    p.p-project-detail {
-        margin: 0;
+    header.projects-header {
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
+        p.p-project-detail {
+            margin: 0;
+        }
 
 footer.home-footer {
     background-color: #004e92;
@@ -516,7 +520,10 @@ a.repo-link, span.repo-link {
     }
 
 /*  PROJECTS */
-
+.projects-header h1.h1-projects,
+.projects-header nav.projects-nav {
+    display: inline-block;
+}
 .projects-container ul.flex-container {
     display: flex;
     flex-direction: column-reverse;
