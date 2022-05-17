@@ -85,10 +85,14 @@ div.skills {
                     font-size: 1.25em;
                     font-weight: bold;
                 }
+
 div.projects-container {
     border: solid 5px;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
 }  
+    p.p-project-detail {
+        margin: 0;
+    }
 
 footer.home-footer {
     background-color: #004e92;
@@ -722,6 +726,7 @@ a.repo-link, span.repo-link {
         div.resume-container {
             box-shadow: none;
         }
+        
 }
 
 /* ***************************************** */
