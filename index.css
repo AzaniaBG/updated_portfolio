@@ -88,7 +88,8 @@ div.skills {
 div.projects-container {
     border: solid 5px;
     border-image: linear-gradient(to right, darkblue, darkorchid) 1;
-}
+}  
+
 footer.home-footer {
     background-color: #004e92;
     margin-top: 3em
@@ -250,7 +251,6 @@ div.skills-container {
             text-align: center;
             padding: 1em 0;
         }
-
     main.home-container {
         height: 50vh;
 
@@ -259,7 +259,6 @@ div.skills-container {
         /* padding: 2em 1em 0; */
         color: whitesmoke;
     }
-
     div.article-home-wrapper {
         background: linear-gradient(to bottom, #000428, #004e92);
 
@@ -268,9 +267,14 @@ div.skills-container {
             padding: 2em 1em;
         }
 
+/* PROJECTS */
     div.projects-container {
         border: none;
     }
+        .projects-container ul.flex-container {
+            flex-direction: column-reverse;
+            flex-wrap: wrap;
+        }  
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -302,10 +306,6 @@ div.skills-container {
             
         }
 
-    main.projects-container {
-        height: 75vh;
-        overflow-y: scroll;
-    }
     .ul-nav {
         list-style: none;
 
@@ -389,38 +389,48 @@ button {
 /*<<<<<<<<<<<<<<<<<<< END  NAV MOBILE <<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
 /* ******** PROJECTS MOBILE ************ */
-
-ul.flex-container {
-    display: flex;
-    flex-direction: column;
-    
-    width: 85%;
-    margin: auto auto;
-    padding-top: 5%;
+/* PROJECTS */
+main.projects-container {
+    height: 75vh;
+    overflow-y: scroll;
 }
-    li.flex-li {
-        margin-bottom: 15px;
-        padding-bottom: 25px;
-        background-color: white;
+    h4.projects-h4 {
+        margin-bottom: 1px;
     }
-    .li-img-mobile {
-        width: 50%;
-        height: auto;
-        margin-bottom: 25px;
-        box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
-        10px 10px 15px rgba(70, 70, 70, 0.12),
-        inset -10px -10px 15px rgba(255, 255, 255, 0.5),
-        inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+
+    .projects-container ul.flex-container {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap-reverse;
+
+        
+        width: 85%;
+        margin: auto auto;
+        padding-top: 5%;
     }
-        .flex-li img.li-img-mobile:hover {
-            filter: drop-shadow(16px 16px 10px black);
-            padding-top: .25em;
-            padding-right: .25em;
+        li.flex-li {
+            margin-bottom: 15px;
+            padding-bottom: 25px;
+            background-color: white;
         }
-
-h4.projects-h4 {
-    margin-bottom: 1px;
-}
+        .li-img-mobile {
+            width: 50%;
+            height: auto;
+            margin-bottom: 25px;
+            box-shadow: -10px -10px 15px rgba(255, 255, 255, 0.5),
+            10px 10px 15px rgba(70, 70, 70, 0.12),
+            inset -10px -10px 15px rgba(255, 255, 255, 0.5),
+            inset 10px 10px 15px rgba(70, 70, 70, 0.12);
+        }
+            .flex-li img.li-img-mobile:hover {
+                filter: drop-shadow(16px 16px 10px black);
+                padding-top: .25em;
+                padding-right: .25em;
+            }
+                article.project-description {
+                    text-align: left;
+                    margin: 0 10%;
+                }            
 
 a.repo-link, span.repo-link {
     font-size: .75em;
@@ -431,11 +441,6 @@ a.repo-link, span.repo-link {
         color: white;
         background-color: gray;
     }
-
-article.project-description {
-    text-align: left;
-    margin: 0 10%;
-}
 
 
 /*  ******** END PROJECTS MOBILE ******** */
@@ -497,20 +502,26 @@ article.project-description {
             height: 100px;
             border-radius: 50%;
         }
-
     main article.article-home {
         padding: 3em 1em;
         font-size: 1.5em;
     }
+
     ul.work-list {
         max-width: 350px;
     }
-        /* div.headline-image {
-            display: inline-block;
-        } */
+
+/*  PROJECTS */
+
+.projects-container ul.flex-container {
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap-reverse;
+}
     div.down-arrow {
         left: 35em;
     }
+
 }
 /*<<<<<<<<<<<<<<<<< END MIN 600px <<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -544,19 +555,19 @@ article.project-description {
         margin: 3em;
         /* box-shadow: 5px 5px 9px rgba(94, 104, 121, 0.3); */
         border-radius: 1em;
-    }
-    
+    }    
         main article.article-home {
             padding: 3em 3em;
         }
-    
+/* projects */   
     ul.flex-container {
-        flex-flow: row wrap;
+        flex-flow: row wrap-reverse;
+        flex-direction: row-reverse;
+
         justify-content: space-between;
         
         margin: auto auto;
-    }
-   
+    }     
         .li-img-mobile {
             flex: 1 2 auto;
 
@@ -564,6 +575,16 @@ article.project-description {
             height: auto;
             margin-bottom: 25px;
         }
+        .projects-container article.project-description {
+            max-width: 25em;
+            margin: auto;
+
+            text-align: center;
+        }
+            div.down-arrow {
+                padding-left: 5em;
+                left: 45em;
+            }
 
     /*  PETS */
     .flex.responsive {
@@ -597,9 +618,7 @@ article.project-description {
                     .resume-container .work-list li:last-child {
                         font-size: 1.10em;
                         max-width: 30em;
-                    }
-
-    
+                    }    
     div.skills {
         width: 75%;
         margin: auto;
@@ -620,10 +639,7 @@ article.project-description {
                     font-size: 1.25em;
                 }
 
-    div.down-arrow {
-        padding-left: 5em;
-        left: 45em;
-    }
+
 }
 /*<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
 
@@ -666,6 +682,7 @@ article.project-description {
             width: 90%;
             margin: auto;
         } */
+    /* PROJECTS */
     body.projects-body {
         background-color: #000428;
     }
@@ -679,6 +696,15 @@ article.project-description {
             height: 80vh;
             overflow-y: scroll;  
         }
+        .projects-container ul.flex-container {
+            flex-flow: row wrap-reverse;
+            flex-direction: row-reverse;
+        }
+        div.down-arrow {
+            padding-left: 5em;
+            left: 55em;
+        }
+
 
     .ul-nav {
         width: 50vw;
@@ -687,11 +713,6 @@ article.project-description {
         font-size: 2em;
         padding-bottom: .5em;
     }
-        div.down-arrow {
-            padding-left: 5em;
-            left: 55em;
-        }
-
     div.about-container {
         max-width: 75vw;
         margin: auto;
