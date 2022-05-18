@@ -146,6 +146,10 @@ main.projects-container {
     height: 75vh;
     overflow-y: scroll;
 }  
+div.menu-bar svg {
+    width: 15px;
+    height: 15px;
+}
 .ul-nav {
             list-style: none;
 
@@ -715,7 +719,6 @@ a.repo-link, span.repo-link {
             padding-left: 5em;
             left: 55em;
         }
-
 
     .ul-nav {
         width: 50vw;
