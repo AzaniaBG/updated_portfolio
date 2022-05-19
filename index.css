@@ -748,7 +748,11 @@ a.repo-link, span.repo-link {
         display: inline-flex;
         width: 65em;
     }
-
+    div.div.home-container  {
+        max-width: 100px;
+        margin: auto;
+        border: thick solid #000428;
+    }
     main.home-container  {
         height: 45vh;
     }
@@ -782,6 +786,11 @@ a.repo-link, span.repo-link {
 
 /* @1500 min*/
 @media only screen and (min-width: 1500px) {
+    div.div.home-container  {
+        width: 85%;
+        margin: auto;
+    }
+
     div.article-home-wrapper {
         max-width: 85%;
         margin: auto;
