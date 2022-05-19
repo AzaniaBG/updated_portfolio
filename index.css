@@ -465,7 +465,6 @@ a.repo-link, span.repo-link {
 
 /*****  BREAKPOINT AT 600px  ****/
 @media only screen and (min-width: 600px) {
-
     header h1.home-h1-min600 {
         display: block;
         font-size: 3em;
@@ -610,6 +609,11 @@ a.repo-link, span.repo-link {
     /* ***** */
 
     /* ABOUT */
+    div.about-container {
+        height: 90vh;
+        overflow-y: scroll;
+    }
+
     div.resume-container {
         padding: 3em;
     }
@@ -748,8 +752,8 @@ a.repo-link, span.repo-link {
         display: inline-flex;
         width: 65em;
     }
-    div.div.home-container  {
-        max-width: 100px;
+    div.home-wrapper  {
+        max-width: 1200px;
         margin: auto;
         border: thick solid #000428;
     }
@@ -786,7 +790,7 @@ a.repo-link, span.repo-link {
 
 /* @1500 min*/
 @media only screen and (min-width: 1500px) {
-    div.div.home-container  {
+    div.home-wrapper  {
         width: 85%;
         margin: auto;
     }
