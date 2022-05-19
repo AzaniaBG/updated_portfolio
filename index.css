@@ -784,10 +784,17 @@ a.repo-link, span.repo-link {
         width: 1000px;
         margin: auto;
     }
-    div.down-arrow {
-        padding-left: 5em;
-        left: 75em;
+
+    body.projects-body {
+        padding: 3em;
     }
+        main.projects-container {
+            height: 70vh;
+        }
+            div.down-arrow {
+                padding-left: 5em;
+                left: 75em;
+            }
 
 }
 /* ***************************************** */
