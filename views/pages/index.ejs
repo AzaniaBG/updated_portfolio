@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head'); %>
+</head>
+<body>
+    <main>
+        <ul class="project-ul flex-container">
+        <% projectsData.projects.map((project) => { %>
+            <li class="flex-item-li flex-container-li">
+                
+                
+                <div class="flex-item-info">
+                    <p><%= project.projectName %></p>
+                    <a href=<%= project.liveLink %>>live link</a>
+                    <article> <%= project.description %> </article>
+                    <p class="project-tech">tech:<br> <%= project.tech %> </p>
+                    <a href="<% project.repo %>">GitHub repo</a>
+                </div>
+
+                <div class="flex-item-image">
+                    <img class="project-image" src="<%= project.image %>" alt="<%= project.alt %>" />
+                </div>
+            </li>
+        <% }) %>
+        </ul>
+    </main>
+</body>
+</html>
